@@ -1,17 +1,18 @@
 {
-    "name": "league/flysystem-aws-s3-v3",
-    "description": "Flysystem adapter for the AWS S3 SDK v3.x",
+    "name": "league/flysystem-aws-s3-private",
+    "description": "Extend flysystem adapter for the AWS S3 SDK and remove public option",
     "license": "MIT",
     "authors": [
         {
-            "name": "Frank de Jonge",
-            "email": "info@frenky.net"
+            "name": "Elie Sauveterre",
+            "email": "elie.sauveterre@haleo.ca"
         }
     ],
     "require": {
         "php": ">=5.5.0",
         "league/flysystem": "^1.0.40",
-        "aws/aws-sdk-php": "^3.0.0"
+        "aws/aws-sdk-php": "^3.0.0",
+        "league/flysystem-aws-s3-v3": "^1.0"
     },
     "require-dev": {
         "phpspec/phpspec": "^2.0.0",
@@ -19,12 +20,7 @@
     },
     "autoload": {
         "psr-4": {
-            "League\\Flysystem\\AwsS3v3\\": "src/"
-        }
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "League\\Flysystem\\AwsS3v3\\Stub\\": "stub"
+            "League\\Flysystem\\AwsS3Private\\": "src/"
         }
     },
     "config": {
